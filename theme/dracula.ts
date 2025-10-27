@@ -1,0 +1,20 @@
+export const dracula = {
+  '--bg': '#282a36',
+  '--bg-alt': '#1e1f29',
+  '--sidebar': '#21222c',
+  '--panel': '#2b2d3a',
+  '--tab': '#2f3142',
+  '--tab-active': '#44475a',
+  '--text': '#f8f8f2',
+  '--muted': '#c8c9d1',
+  '--accent': '#bd93f9',
+  '--accent-2': '#50fa7b',
+  '--accent-blue': '#8be9fd',
+  '--accent-pink': '#ff79c6',
+  '--accent-yellow': '#f1fa8c',
+  '--accent-orange': '#ffb86c',
+  '--accent-red': '#ff5555',
+  '--link': '#8be9fd',
+  '--project': '#6f73a5',
+};
+

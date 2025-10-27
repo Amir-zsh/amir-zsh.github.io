@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import AmirAcademicSite from '../components/AmirAcademicSite'
-import { about, publications } from '../data'
+import { Layout } from '../components/layout/Layout'
+import { AboutPage } from '../components/pages'
+import { about } from '../data'
 
 export default function Home() {
   const structuredData = {
@@ -50,7 +51,10 @@ export default function Home() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
-      <AmirAcademicSite />
+      
+      <Layout currentPage="/" pageTitle="about.md">
+        <AboutPage />
+      </Layout>
     </>
   )
 }

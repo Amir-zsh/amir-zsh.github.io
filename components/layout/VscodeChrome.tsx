@@ -40,7 +40,18 @@ export const VscodeChrome: React.FC<VscodeChromeProps> = ({ tabs, active, onSele
           <span className="h-3 w-3 rounded-full" style={{ background: '#ffbd2e' }} />
           <span className="h-3 w-3 rounded-full" style={{ background: '#27c93f' }} />
         </div>
-        <div className="text-sm ml-2 truncate" style={{ color: 'var(--muted)' }}>Code - Amir Ziashahabi</div>
+        
+        {/* Logo */}
+        <button 
+          onClick={() => onSelect('/')}
+          className="ml-2 flex-shrink-0 hover:opacity-80 transition-opacity"
+          aria-label="Go to home"
+        >
+          <img src="/logo.svg" alt="A-Z Logo" className="h-8 w-auto" />
+        </button>
+        
+        {/* Name */}
+        <div className="text-sm ml-2 truncate" style={{ color: 'var(--muted)' }}> Amir Ziashahabi</div>
       </div>
       {/* Tabs */}
       <div className="flex items-stretch overflow-x-auto" style={{ background: 'var(--tab)', borderBottom: '1px solid var(--panel)' }}>

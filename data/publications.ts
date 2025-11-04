@@ -8,7 +8,7 @@ export const publications: Publication[] = [
     venue: 'NeurIPS 2025 Efficient Reasoning Workshop',
     year: '2025',
     status: 'accepted',
-    links: { code: links.PAD, pdf: undefined },
+    links: { code: links.PAD, pdf: 'https://arxiv.org/abs/2511.00351' },
     figureSrc: '/figures/pad.png',
     tags: ['LLMs','Decoding','Efficiency']
   },
@@ -18,7 +18,7 @@ export const publications: Publication[] = [
     venue: 'Conference on Empirical Methods in Natural Language Processing (EMNLP)',
     year: '2025',
     status: 'accepted',
-    links: { code: links.MobiZO, pdf: undefined },
+    links: { code: links.MobiZO, pdf: 'https://arxiv.org/abs/2409.15520' },
     figureSrc: '/figures/mobizo.png',
     tags: ['LLMs','Edge','Fine-Tuning']
   },
@@ -28,17 +28,17 @@ export const publications: Publication[] = [
     venue: 'IEEE International Conference on Data Mining (ICDM)',
     year: '2025',
     status: 'accepted',
-    links: { code: links.GeoToken, pdf: undefined },
+    links: { code: links.GeoToken, pdf: 'https://arxiv.org/abs/2511.01082' },
     figureSrc: '/figures/geotoken.png',
     tags: ['Vision','Geolocalization','Transformers']
   },
   {
     title: 'OSMGen: Highly Controllable Satellite Image Synthesis using OpenStreetMap Data',
-    authors: 'Amir Ziashahabi, Narges Ghasemi, Sajjad Shahabi, John Krumm, Salman Avestimehr, Cyrus Shahabi',
+    authors: 'Amir Ziashahabi*, Narges Ghasemi*, Sajjad Shahabi, John Krumm, Salman Avestimehr, Cyrus Shahabi',
     venue: 'NeurIPS 2025 UrbanAI Workshop',
     year: '2025',
     status: 'accepted',
-    links: { code: links.OSMGen, pdf: undefined },
+    links: { code: links.OSMGen, pdf: 'https://arxiv.org/abs/2511.00345' },
     figureSrc: '/figures/osmgen.png',
     tags: ['Diffusion','Remote Sensing','Control']
   },
@@ -48,7 +48,7 @@ export const publications: Publication[] = [
     venue: 'IEEE International Symposium on Information Theory (ISIT)',
     year: '2024',
     status: 'published',
-    links: { code: links.FDDM, pdf: undefined },
+    links: { code: links.FDDM, pdf: '/files/FourierDiffusion-ISIT.pdf' },
     figureSrc: '/figures/fddm.png',
     tags: ['Diffusion','Frequency-Domain']
   },
@@ -58,7 +58,7 @@ export const publications: Publication[] = [
     venue: 'Privacy Enhancing Technologies Symposium (PETS)',
     year: '2024',
     status: 'published',
-    links: { code: undefined, pdf: undefined },
+    links: { code: undefined, pdf: 'https://arxiv.org/abs/2403.17296' },
     figureSrc: '/figures/hawk.png',
     tags: ['Privacy','SMP','Crypto']
   },
@@ -68,7 +68,7 @@ export const publications: Publication[] = [
     venue: 'Physical Review E',
     year: '2024',
     status: 'published',
-    links: { code: undefined, pdf: undefined },
+    links: { code: undefined, pdf: 'https://arxiv.org/abs/2402.17090' },
     figureSrc: '/figures/rgnorm.png',
     tags: ['Theory','Diffusion']
   },
@@ -78,7 +78,7 @@ export const publications: Publication[] = [
     venue: 'Proceedings of Machine Learning and Systems (MLSys)',
     year: '2023',
     status: 'published',
-    links: { code: undefined, pdf: undefined },
+    links: { code: undefined, pdf: 'https://proceedings.mlsys.org/paper_files/paper/2023/hash/47d096470b10eba0c1805697c4445101-Abstract-mlsys2023.html' },
     figureSrc: '/figures/pytorch-rpc.png',
     tags: ['Distributed','PyTorch']
   },

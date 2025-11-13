@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <>
       <Head>
-        <title>Experience - {about.name}</title>
+        <title>{`Experience - ${about.name}`}</title>
         <meta name="description" content={`Professional experience of ${about.name}, ${about.title} at ${about.affiliation}`} />
         <link rel="canonical" href="https://amir-zsh.github.io/experience" />
       </Head>

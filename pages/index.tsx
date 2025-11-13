@@ -25,10 +25,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{about.name} - {about.title}</title>
+        <title>{`${about.name} - ${about.title}`}</title>
         <meta name="description" content={`${about.name}, ${about.title} at ${about.affiliation}. Research in LLM efficiency, speculative decoding, and edge training.`} />
         <meta name="keywords" content={`${about.name}, ${about.interests.join(', ')}, computer science, machine learning, LLM`} />
         <meta name="author" content={about.name} />
+        
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="rwGRh8F4er99vkE4yx-E7y3r8yRt38rOZtHwmfW05OA" />
         
         {/* Open Graph */}
         <meta property="og:title" content={`${about.name} - ${about.title}`} />

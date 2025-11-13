@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - {about.name}</title>
+        <title>{`Projects - ${about.name}`}</title>
         <meta name="description" content={`Research and software projects by ${about.name}`} />
         <link rel="canonical" href="https://amir-zsh.github.io/projects" />
       </Head>

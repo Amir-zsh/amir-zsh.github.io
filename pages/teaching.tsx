@@ -7,7 +7,7 @@ export default function Teaching() {
   return (
     <>
       <Head>
-        <title>Teaching - {about.name}</title>
+        <title>{`Teaching - ${about.name}`}</title>
         <meta name="description" content={`Teaching and community involvement by ${about.name}`} />
         <link rel="canonical" href="https://amir-zsh.github.io/teaching" />
       </Head>

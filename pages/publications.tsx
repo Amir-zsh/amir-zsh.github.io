@@ -7,7 +7,7 @@ export default function Publications() {
   return (
     <>
       <Head>
-        <title>Publications - {about.name}</title>
+        <title>{`Publications - ${about.name}`}</title>
         <meta name="description" content={`Research publications by ${about.name}, ${about.title} at ${about.affiliation}`} />
         <link rel="canonical" href="https://amir-zsh.github.io/publications" />
       </Head>

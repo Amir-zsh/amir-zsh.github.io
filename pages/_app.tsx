@@ -1,7 +1,14 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Script from 'next/script'
+import { Source_Serif_4 } from 'next/font/google'
 import '../styles/globals.css'
+
+const serif = Source_Serif_4({
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+})
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -11,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" type="image/svg+xml" href="/favicon-32x32.svg" />
         <link rel="apple-touch-icon" href="/favicon-32x32.svg" />
       </Head>
-      
+
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-H95GZ54PPF"
@@ -25,9 +32,10 @@ export default function App({ Component, pageProps }: AppProps) {
           gtag('config', 'G-H95GZ54PPF');
         `}
       </Script>
-      
-      <Component {...pageProps} />
+
+      <div className={`${serif.variable} fonts`}>
+        <Component {...pageProps} />
+      </div>
     </>
   )
 }
-

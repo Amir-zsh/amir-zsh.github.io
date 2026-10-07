@@ -3,10 +3,10 @@ export type Publication = {
   authors: string;
   venue: string;
   year: string;
-  status: 'accepted' | 'published' | 'preprint' | string;
+  status: 'accepted' | 'published' | 'under-review';
   links?: { code?: string; pdf?: string };
   figureSrc?: string;
-  tags?: string[];
+  description?: string;
 };
 
 export type Education = {
@@ -15,7 +15,6 @@ export type Education = {
   gpa?: string;
   time: string;
   place: string;
-  logo?: string;
 };
 
 export type Experience = {
@@ -29,7 +28,6 @@ export type Experience = {
 export type Project = {
   name: string;
   stack: string[];
-  link?: string;
   desc: string;
 };
 
@@ -40,10 +38,8 @@ export type About = {
   email: string;
   github: string;
   interests: string[];
-  location: string;
   avatar: string;
   cv?: string;
   skills?: Record<string, string[]>;
   bio?: string;
 };
-
